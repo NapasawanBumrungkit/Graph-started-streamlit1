@@ -103,6 +103,10 @@ plt.xlabel('Date')
 plt.ylabel('Price (USD)')
 plt.show()"""
     st.code(code, language="python")
+    st.markdown(
+    "<p style='text-align: right;'>อ้างอิงจาก chatGPT</p>",
+    unsafe_allow_html=True
+    )
 
 
 
@@ -197,6 +201,9 @@ lstm_model.compile(optimizer="adam", loss="mean_squared_error")"""
 
 evaluate_and_plot(lstm_model, X_test_lstm, y_test, "Alibaba Stock Price Prediction using LSTM")"""
     st.code(code, language="python")
+    st.markdown("<p style='text-align: right;'>อ้างอิงจาก chatGPT</p>",
+            unsafe_allow_html=True
+            )
 
 
 
@@ -265,6 +272,7 @@ elif page == "Demo: Machine Learning":
 
         except FileNotFoundError:
             st.error("ไม่พบไฟล์ 'TSLA_2010-06-29_2025-02-13 (1).csv'")
+            
 
 
 elif page == "Demo: Neural Network":
